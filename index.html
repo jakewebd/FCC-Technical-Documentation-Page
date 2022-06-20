@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <title>CSS technical Documentation Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <p id="nav-header">CSS Documentation</p>
+        </header>
+        <div class="nav-header-line"></div>
+        <section id="nav-links">
+            <a class="nav-link" href="#Introduction"><button>Introduction</button></a>
+            <div class="nav-line"></div>
+            <a class="nav-link" href="#What_you_should_already_know"><button>What you should already know</button></a>
+            <div class="nav-line"></div>
+            <a class="nav-link" href="#Getting_started"><button>Getting started</button></a>
+            <div class="nav-line"></div>
+            <a class="nav-link" href="#CSS_Syntax"><button>CSS Syntax</button></a>
+            <div class="nav-line"></div>
+            <a class="nav-link" href="#Selectors"><button>Selectors</button></a>
+            <div class="nav-line"></div>
+            <a class="nav-link" href="#CSS_Comments"><button>CSS Comments</button></a>
+            <div class="nav-line"></div>
+            <a class="nav-link" href="#Backgrounds"><button>Backgrounds</button></a>
+            <div class="nav-line"></div>
+            <a class="nav-link" href="#Height/Width"><button>Height/Width</button></a>
+            <div class="nav-line"></div>
+            <a class="nav-link" href="#Margins"><button>Margins</button></a>
+            <div class="nav-line"></div>
+            <a class="nav-link" href="#References"><button>References</button></a>
+
+        </section>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header class="page-head">
+                <h1>Introduction</h1>
+            </header>
+            <p class="intro-p">
+                Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document
+                written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements
+                should be rendered on screen, on paper, in speech, or on other media.
+            </p>
+            <p class="intro-p">
+                CSS is among the core languages of the open web and is standardized across Web browsers according to W3C
+                specifications. Previously, development of various parts of CSS specification was done synchronously,
+                which allowed versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, CSS3.
+                However, CSS4 has never become an official version.
+            </p>
+            <p class="intro-p">
+                From CSS3, the scope of the specification increased significantly and the progress on different CSS
+                modules started to differ so much, that it became more effective to develop and release recommendations
+                separately per module. Instead of versioning the CSS specification, W3C now periodically takes a
+                snapshot of the latest stable state of the CSS specification
+            </p>
+
+        </section>
+
+        <section id="What_you_should_already_know" class="main-section">
+            <header class="page-head">
+                <h2>What you should already know</h2>
+            </header>
+            <p class="wysak-p">
+                You should have a good understanding about computers, the internet, screens, and about HTML and HTML5
+                with things such as:
+
+            <ul class="list">
+                <li>Creating the proper elements for the right content</li>
+                <li>Creating images and understanding aspect ratios</li>
+                <li>Understanding basic color theory and contrast ratios</li>
+            </ul>
+
+        </section>
+
+        <section id="Getting_started" class="main-section">
+            <header class="page-head">
+                <h2>Getting started</h2>
+            </header>
+            <p class="gs-p">
+                To get started with CSS open up a notepad document or a source code editor of your choice.
+            </p>
+            <p class="gs-p">
+                You want to start by creating a <code>&lt;style&gt;</code> element in your HTML document.<br><br>
+                This will be where you enter the CSS selectors and properties to style the content.
+            </p>
+            <div class="code-bg">
+
+                <p class="code-p"><br>
+                    &nbsp;&nbsp; &lt;style&gt; <br> <br>
+                    &nbsp;&nbsp; selector {<br><br>
+                    &nbsp;&nbsp; CSS-property: ;<br><br>
+                    &nbsp;&nbsp;}<br><br>
+                    &nbsp;&nbsp; &lt;/style&gt;
+                    <br><br>
+                </p>
+
+            </div>
+
+            <p class="gs-p">
+                Another way to style a page is to link the HTML document to an external CSS file.<br><br>
+                This is done by using the link element in the HTML head.
+            </p>
+
+            <div class="code-bg">
+
+                <p class="code-p"><br>
+                    &nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css" href="file.css" /&gt; <br><br>
+                </p>
+
+            </div>
+
+            <p class="gs-p">
+                By linking to an external CSS file you dont have to put everything in between <code>&lt;style&gt;</code>
+                elements.
+            </p>
+
+        </section>
+
+        <section id="CSS_Syntax" class="main-section">
+            <header class="page-head">
+                <h2>CSS Syntax</h2>
+            </header>
+            <p class="syntax-p">
+                A CSS rule consists of a selector and a declaration block.<br><br>
+                A selector points to the target element you want to style.<br><br>
+                A declaration block contains one or more declarations seperated by semicolons. <code>;</code><br><br>
+                Each declaration contains a CSS property name and a value, seperated by a colon. <code>:</code><br><br>
+                Multiple declaratons are seperated by semicolons, and declaration blocks are surrounded by curly braces.
+                <code>{}</code>
+            </p>
+            <div class="code-bg">
+                <p class="code-p">
+                    <br>
+                    &nbsp;&nbsp;selector {<br><br>
+                    &nbsp;&nbsp;CSS-property-name: value;<br><br>
+                    &nbsp;&nbsp;}<br><br>
+                </p>
+            </div>
+
+        </section>
+
+        <section id="Selectors" class="main-section">
+            <header class="page-head">
+                <h2>Selectors</h2>
+            </header>
+            <p class="sel-p">
+                CSS Selectors are used to target an element so you can style it.
+            </p>
+            <p class="list-head">
+                A few basic CSS selectors are:
+            <ul class="list">
+                <li>Class selectors</li>
+                <li>ID selectors</li>
+                <li>Element type selectors</li>
+                <li>Universal Selector</li>
+            </ul>
+            </p>
+            <p>
+                The basic selectors shown above are used as follows:
+            </p>
+
+            <div class="code-bg">
+                <p class="code-p"><br>
+                    &nbsp;&nbsp;.class {CSS-property: ;}<br><br>
+                    &nbsp;&nbsp;#ID {CSS-property: ;}<br><br>
+                    &nbsp;&nbsp;h1 {CSS-property: ;}<br><br>
+                    &nbsp;&nbsp;* {CSS-property: ;}<br><br>
+                </p>
+            </div>
+
+        </section>
+
+        <section id="CSS_Comments" class="main-section">
+            <header class="page-head">
+                <h2>CSS Comments</h2>
+            </header>
+            <p class="comment-p">
+                CSS Comments are not displayed in the browser, but they can help you document your source code.
+            </p>
+            <p class="comment-p">
+                Comments are used to explain the code, and may help you if you need to edit the source code at a later
+                date.
+            </p>
+            <p class="comment-p">
+                CSS Comments can be placed on the HTML page in between <code>&lt;style&gt;</code> elements, or on an
+                external CSS file.
+            </p>
+            <p class="comment-p">
+                The syntax is as follows:
+            </p>
+            <div class="code-bg">
+                <p class="code-p">
+                    <br>
+                    &nbsp;&nbsp;/* this is a single-line comment */
+                    <br><br>
+                    &nbsp;&nbsp;/* this is a<br>
+                    &nbsp;&nbsp;multi-line comment */
+                    <br><br>
+                </p>
+            </div>
+
+        </section>
+
+        <section id="Backgrounds" class="main-section">
+            <header class="page-head">
+                <h2>Backgrounds</h2>
+            </header>
+            <p class="bg-p">
+                CSS backgrounds are used to add background effects for elements.
+            </p>
+            <p class="list-head">
+                A few CSS background properties are:
+            </p>
+            <ul class="list">
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-repeat</li>
+                <li>background-position</li>
+            </ul>
+            <p class="bg-p">
+                The background-color property is used to set the color of the elements background. The background-image
+                property is used to set an image as the background for an element. The background-position property is
+                used to set where in the element the background should start from. The background-repeat property states
+                that if the background is undersized it wont repeat multiple times across the screen/element.
+            </p>
+            <p class="bg-p">
+                The syntax to use these properties is as follows:
+            </p>
+            <div class="code-bg">
+                <p class="code-p"><br>
+                    &nbsp;&nbsp;selector {<br><br>
+                    &nbsp;&nbsp;background-color: color;<br><br>
+                    &nbsp;&nbsp;background-image: url(linktoimage);<br><br>
+                    &nbsp;&nbsp;background-repeat: no-repeat;<br><br>
+                    &nbsp;&nbsp;background-position: top left;<br><br>
+                    &nbsp;&nbsp;}<br><br>
+                </p>
+            </div>
+
+        </section>
+
+        <section id="Height/Width" class="main-section">
+            <header class="page-head">
+                <h2>Height/Width</h2>
+            </header>
+            <p class="hw-p">
+                The CSS height and width properties are used to set the height and width of an element.
+            </p>
+            <p class="hw-p">
+                The height and width properties do not include padding, borders, or margins. It sets the height/width of
+                the area inside the padding, border, and margin of the element.
+            </p>
+            <p class="list-head">
+                The height and width properties may have the following values:
+            </p>
+            <ul class="list">
+                <li>auto - this is the default value. the browser calculates the width/height </li>
+                <li>length - defines the height/width in px, cm, etc.</li>
+                <li>% - defines the height/width in a percentage of the containing element</li>
+            </ul>
+            <p class="hw-p">
+                The syntax for setting the height/width is as follows:
+            </p>
+
+            <div class="code-bg">
+                <p class="code-p"><br>
+                    &nbsp;&nbsp;selector {<br><br>
+                    &nbsp;&nbsp;height: value;<br><br>
+                    &nbsp;&nbsp;width: value;<br><br>
+                    &nbsp;&nbsp;}<br><br>
+                </p>
+            </div>
+
+        </section>
+        <section id="Margins" class="main-section">
+            <header class="page-head">
+                <h2>Margins</h2>
+            </header>
+            <p class="m-p">
+                The CSS margin properties are used to create space around elements, outside of any defined borders.
+            </p>
+            <p class="m-p">
+                CSS has properties for specifying the margin for each side of an element.
+            </p>
+            <p class="list-head">
+                Those properties are:
+            </p>
+            <ul class="list">
+                <li>margin-top</li>
+                <li>margin-right</li>
+                <li>margin-bottom</li>
+                <li>margin-left</li>
+            </ul>
+            <p class="list-head">
+                All margin properties can have the following values:
+            </p>
+            <ul class="list">
+                <li>auto - this is the default value. the browser calculates the width/height </li>
+                <li>length - defines the height/width in px, cm, etc.</li>
+                <li>% - defines the height/width in a percentage of the containing element</li>
+            </ul>
+            <p class="m-p">
+                Setting a margin on each side of an element is done as follows:
+            </p>
+            <div class="code-bg">
+                <p class="code-p"><br>
+                    &nbsp;&nbsp;selector {<br><br>
+                    &nbsp;&nbsp;margin-top: value;<br><br>
+                    &nbsp;&nbsp;margin-right: value;<br><br>
+                    &nbsp;&nbsp;margin-bottom: value;<br><br>
+                    &nbsp;&nbsp;margin-left: value;<br><br>
+                    &nbsp;&nbsp;}<br><br>
+                </p>
+            </div>
+            <p class="m-p">
+                You can use the margin - shorthand property to shorten the code and specify all margin side properties
+                in one property.
+            </p>
+            <p class="m-p">
+                The way it works is that if the margin property has four values it will create a margin in the order of
+                top, right, bottom, left.
+            </p>
+            <p class="m-p">
+                If it has 3 values it will create it with the first value being the top margin, the second value being
+                the margin for right and left, and the third value being the bottom margin.
+            </p>
+            <p class="m-p">
+                If it has 2 values it will create a margin using the first value for the top and bottom margins, and the
+                second value for the right and left margins.
+            </p>
+            <p class="m-p">
+                If it has one value it will set the same size margin for all sides.
+            </p>
+            <p class="m-p">
+                the syntax for using the margin - shorthand property is as follows:
+            </p>
+            <div class="code-bg">
+                <p class="code=p"><br>
+                    &nbsp;&nbsp;selector {<br><br>
+                    &nbsp;&nbsp;margin: value value value value;<br><br>
+                    &nbsp;&nbsp;}<br><br>
+                </p>
+            </div>
+
+        </section>
+
+        <section id="References" class="main-section">
+            <header class="page-head">
+                <h2>References</h2>
+            </header>
+            <p class="ref-p">
+                Most of the documentation in this page was taken from <a class="ref-a" target="_blank"
+                    href="https://www.w3schools.com/css/">W3schools</a> and <a class="ref-a" target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN</a>.
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(160, 160, 160)
+}
+
+code {
+    text-decoration: none;
+    font-family: inherit;
+    padding: 0;
+    background-color: inherit;
+}
+
+#navbar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 2px solid rgb(200, 26, 26);
+    max-width: 20%;
+    min-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(138, 136, 136);
+    color: rgb(240, 240, 240, );
+}
+
+.nav-line {
+    width: 100%;
+    background-color: rgb(9, 188, 188);
+    height: 0.5%;
+}
+
+.nav-header-line {
+    width: 100%;
+    height: 0.5%;
+    background-color: rgb(69, 58, 58);
+    margin-top: -2%;
+    margin-bottom: 5%;
+}
+
+#navbar header {
+    font-family: Roboto, sans-serif;
+    margin-left: 10%;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#navbar section p {
+    margin-left: 10px;
+}
+
+#navbar section button {
+    margin-left: 10%;
+    margin-top: 4.2%;
+    margin-bottom: 4.2%;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    background-color: rgb(138, 121, 121);
+    border: none;
+    color: rgb(204, 204, 204);
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+#navbar section button:hover {
+    background-color: rgb(55, 53, 53);
+    cursor: pointer;
+}
+
+#navbar section button:active {
+    box-shadow: none;
+    transform: scale(90%);
+    background-color: rgb(55, 53, 53);
+}
+
+#navbar section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#main-doc {
+    position: relative;
+    max-width: 75%;
+    min-width: 75%;
+    left: 23%;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.page-head {
+    font-size: 1.4rem !important;
+    font-family: inherit;
+    margin-left: -1.5%;
+}
+
+li {
+    margin-top: 1%;
+}
+
+.code-bg {
+    background-color: rgb(70, 68, 68);
+    color: rgb(204, 204, 204);
+    border: 2px solid rgb(9, 188, 188);
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 1rem;
+}
+.list-head {
+    margin-left: 2%;
+}
+.list {
+    margin-left: 1%;
+}
+@media screen and (max-width:375px) {
+
+    html {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: rgb(160, 160, 160)
+    }
+    
+    code {
+        text-decoration: none;
+        font-family: inherit;
+        padding: 0;
+        background-color: inherit;
+    }
+    
+    #navbar {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-right: 2px solid rgb(200, 26, 26);
+        max-width: 20%;
+        min-width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: rgb(138, 136, 136);
+        color: rgb(240, 240, 240, );
+    }
+    
+    .nav-line {
+        width: 100%;
+        background-color: rgb(9, 188, 188);
+        height: 0.5%;
+    }
+    
+    .nav-header-line {
+        width: 100%;
+        height: 0.5%;
+        background-color: rgb(69, 58, 58);
+        margin-top: -2%;
+        margin-bottom: 5%;
+    }
+    
+    #navbar header {
+        font-family: Roboto, sans-serif;
+        margin-left: 10%;
+        font-size: 0.55rem;
+        font-weight: 600;
+    }
+    
+    #navbar section p {
+        margin-left: 10px;
+    }
+    
+    #navbar section button {
+        margin-left: 10%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        padding: 10px;
+        text-align: center;
+        width: 80%;
+        background-color: rgb(138, 121, 121);
+        border: none;
+        color: rgb(204, 204, 204);
+        border-radius: 10px;
+        box-shadow: 2px 2px black;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 0.3em;
+        letter-spacing: 0.5px;
+    }
+    
+    #navbar section button:hover {
+        background-color: rgb(55, 53, 53);
+        cursor: pointer;
+    }
+    
+    #navbar section button:active {
+        box-shadow: none;
+        transform: scale(90%);
+        background-color: rgb(55, 53, 53);
+    }
+    
+    #navbar section a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    #main-doc {
+        position: relative;
+        max-width: 75%;
+        min-width: 75%;
+        left: 23%;
+        margin: 0;
+        font-family: Roboto, sans-serif;
+    }
+    
+    .page-head {
+        font-size: 0.9rem !important;
+        font-family: inherit;
+        margin-left: -1.5%;
+    }
+    
+    li {
+        margin-top: 1%;
+    }
+    
+    .code-bg {
+        background-color: rgb(70, 68, 68);
+        color: rgb(204, 204, 204);
+        border: 2px solid rgb(9, 188, 188);
+        border-radius: 10px;
+        font-family: monospace;
+        font-size: 0.5rem;
+    }
+    .list-head {
+        margin-left: 2%;
+    }
+    .list {
+        margin-left: 1%;
+    }
+    main {
+        font-size: 0.5rem;
+    }
+
+
+}
+@media screen and (min-width:376px) and (max-width:450px) {
+    
+    html {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: rgb(160, 160, 160)
+    }
+    
+    code {
+        text-decoration: none;
+        font-family: inherit;
+        padding: 0;
+        background-color: inherit;
+    }
+    
+    #navbar {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-right: 2px solid rgb(200, 26, 26);
+        max-width: 20%;
+        min-width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: rgb(138, 136, 136);
+        color: rgb(240, 240, 240, );
+    }
+    
+    .nav-line {
+        width: 100%;
+        background-color: rgb(9, 188, 188);
+        height: 0.5%;
+    }
+    
+    .nav-header-line {
+        width: 100%;
+        height: 0.5%;
+        background-color: rgb(69, 58, 58);
+        margin-top: -2%;
+        margin-bottom: 5%;
+    }
+    
+    #navbar header {
+        font-family: Roboto, sans-serif;
+        margin-left: 10%;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    
+    #navbar section p {
+        margin-left: 10px;
+    }
+    
+    #navbar section button {
+        margin-left: 10%;
+        margin-top: 17%;
+        margin-bottom: 17%;
+        padding: 10px;
+        text-align: center;
+        width: 80%;
+        background-color: rgb(138, 121, 121);
+        border: none;
+        color: rgb(204, 204, 204);
+        border-radius: 10px;
+        box-shadow: 2px 2px black;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 0.4em;
+        letter-spacing: 0.5px;
+    }
+    
+    #navbar section button:hover {
+        background-color: rgb(55, 53, 53);
+        cursor: pointer;
+    }
+    
+    #navbar section button:active {
+        box-shadow: none;
+        transform: scale(90%);
+        background-color: rgb(55, 53, 53);
+    }
+    
+    #navbar section a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    #main-doc {
+        position: relative;
+        max-width: 75%;
+        min-width: 75%;
+        left: 23%;
+        margin: 0;
+        font-family: Roboto, sans-serif;
+    }
+    
+    .page-head {
+        font-size: 1rem !important;
+        font-family: inherit;
+        margin-left: -1.5%;
+    }
+    
+    li {
+        margin-top: 1%;
+    }
+    
+    .code-bg {
+        background-color: rgb(70, 68, 68);
+        color: rgb(204, 204, 204);
+        border: 2px solid rgb(9, 188, 188);
+        border-radius: 10px;
+        font-family: monospace;
+        font-size: 0.6rem;
+    }
+    .list-head {
+        margin-left: 2%;
+    }
+    .list {
+        margin-left: 1%;
+    }
+    main {
+        font-size: 0.7rem;
+    }
+
+
+
+}
